@@ -1,1 +1,74 @@
 /* Desenvolva sua estilização aqui ... */
+.header__container {
+    display: flex;
+    justify-content: center;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+}
+
+.header__container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.875rem 4.0625rem 3.125rem 4.0625rem;
+    width: var(--container);
+    height: 2.5rem;
+}
+
+.header__container > div > h1 {
+    color: var(--color-grey-1);
+    font-size: var(--font-1);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.music__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+.genre__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8.75rem;
+}
+
+.genre__container > h2 {
+    color: var(--color-grey-1);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+    
+}
+
+.dark__mode .genre__container > h2 {
+    color: var(--color-grey-5);
+}
+
+.genre__container > ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 6rem;
+    gap: 1.875rem 2.4813rem;
+}
+
+.genre__container > ul > li {
+    height: 2rem;
+}
+
+.price__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.375rem;
+}
+
+.price__container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.25rem;
+}
