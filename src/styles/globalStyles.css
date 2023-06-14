@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-brand-1:#9747ff;
+  --color-brand-1: #9747ff;
   --color-grey-0: #15171a;
   --color-grey-1: #212529;
   --color-grey-2: #2b2f33;
@@ -50,7 +50,7 @@
   --color-grey-6: #868E96;
   --color-grey-7: #2B2F33;
   --color-grey-8: #212529;
-  --color-grey-9: #15171A; 
+  --color-grey-9: #15171A;
 
   --color-disable-fixed: #212529;
   --color-actived-fixed: #2b2f33;
@@ -70,7 +70,6 @@
   --font-weight-2: 500;
 
   --line-height-1: 150%
-
 }
 
 body {
@@ -92,4 +91,8 @@ body {
   margin: 0 auto;
   max-width: 100%;
   gap: 4.0625rem;
+}
+
+li {
+  list-style: none;
 }

@@ -7,7 +7,7 @@ export const themeMode = () => {
 
     const saveTheme = JSON.parse(localStorage.getItem('dark__mode'))
 
-    if(saveTheme) {
+    if (saveTheme) {
         imgTheme.setAttribute('src', './src/assets/img/sun.png')
         htmlTag.classList.add('dark__mode')
     } else {
@@ -18,7 +18,7 @@ export const themeMode = () => {
     buttonMode.addEventListener('click', () => {
         htmlTag.classList.toggle('dark__mode')
 
-        if(htmlTag.classList.contains('dark__mode')) {
+        if (htmlTag.classList.contains('dark__mode')) {
             imgTheme.setAttribute('src', './src/assets/img/sun.png')
             localStorage.setItem('dark__mode', true)
         } else {

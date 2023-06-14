@@ -1,4 +1,5 @@
 /* Desenvolva sua estilização aqui ... */
+
 .header__container {
     display: flex;
     justify-content: center;
@@ -7,7 +8,7 @@
     width: 100%;
 }
 
-.header__container > div {
+.header__container>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +17,7 @@
     height: 2.5rem;
 }
 
-.header__container > div > h1 {
+.header__container>div>h1 {
     color: var(--color-grey-1);
     font-size: var(--font-1);
     font-weight: var(--font-weight-1);
@@ -36,26 +37,26 @@
     height: 8.75rem;
 }
 
-.genre__container > h2 {
+.genre__container>h2 {
     color: var(--color-grey-1);
     font-size: var(--font-2);
     font-weight: var(--font-weight-1);
     line-height: var(--line-height-1);
-    
+
 }
 
-.dark__mode .genre__container > h2 {
+.dark__mode .genre__container>h2 {
     color: var(--color-grey-5);
 }
 
-.genre__container > ul {
+.genre__container>ul {
     display: flex;
     flex-wrap: wrap;
     height: 6rem;
     gap: 1.875rem 2.4813rem;
 }
 
-.genre__container > ul > li {
+.genre__container>ul>li {
     height: 2rem;
 }
 
@@ -66,9 +67,242 @@
     height: 4.375rem;
 }
 
-.price__container > div {
+.price__container>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 1.25rem;
+}
+
+.price__container>div>h2 {
+    color: var(--color-grey-1);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .price__container>div>h2 {
+    color: var(--color-grey-5);
+}
+
+.price__container>div>p {
+    color: var(--color-grey-2);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .price__container>div>p {
+    color: var(--color-grey-5);
+}
+
+.price__container>input {
+    height: 1.5625rem;
+}
+
+.albums__found {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 3.75rem;
+}
+
+.albums__found>h2 {
+    color: var(--color-grey-1);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .albums__found>h2 {
+    color: var(--color-grey-5);
+}
+
+.albums__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2.5rem 1.5625rem;
+}
+
+.albums__list>li {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.25rem;
+    gap: 0.75rem;
+}
+
+.albums__list>li>figure {
+    margin: 0rem;
+}
+
+.albums__list>li>figure>img {
+    width: 100%;
+    height: 7.1875rem;
+    border-radius: 0.25rem / 0.25rem 0.25rem 0rem 0rem;
+    background-size: cover;
+}
+
+.albums__list>li>figure>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    width: max-content;
+    height: 0.9375rem;
+    gap: 1.25rem;
+}
+
+.albums__list>li>figure>div>figcaption {
+    color: var(--color-grey-2);
+    font-size: var(--font-4);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .albums__list>li>figure>div>figcaption {
+    color: var(--color-grey-6);
+}
+
+.albums__list>li>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 1rem 1.25rem;
+    gap: 1.875rem;
+}
+
+.albums__list>li>div>h3 {
+    color: var(--color-grey-1);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .albums__list>li>div>h3 {
+    color: var(--color-grey-1);
+}
+
+.price__area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8.75rem;
+}
+
+.price__area>p {
+    color: var(--color-grey-1);
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--line-height-1);
+}
+
+.dark__mode .price__area>p {
+    color: var(--color-grey-1);
+}
+
+.button__primary {
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+    color: var(--color-grey-2);
+    padding: 0rem 0.5rem;
+    height: 1.875rem;
+    background-color: var(--color-grey-8);
+    border: 0.0625rem solid var(--color-grey-8);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+
+.dark__mode .button__primary {
+    color: var(--color-grey-6);
+}
+
+.button__primary:hover {
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-7);
+    border: 0.0625rem solid var(--color-grey-7);
+    transition: 0.5s;
+}
+
+.button__secondary {
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+    color: var(--color-grey-2);
+    padding: 0rem 0.5rem;
+    height: 1.875rem;
+    background-color: var(--color-grey-7);
+    border: 0.0625rem solid var(--color-grey-7);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+
+.button__secondary:hover {
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-8);
+    border: 0.0625rem solid var(--color-grey-8);
+    transition: 0.5s;
+}
+
+.button__secondary:focus {
+    color: var(--color-white-fixed);
+    background-color: var(--color-actived-fixed);
+    border: 0.0625rem solid var(--color-white-fixed);
+    transition: 0.5s;
+}
+
+.button__primary--active {
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
+    color: var(--color-white-fixed);
+    padding: 0rem 0.5rem;
+    height: 1.875rem;
+    background-color: var(--color-actived-fixed);
+    border: 0.0625rem solid var(--color-white-fixed);
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+
+.backgroundCard {
+    background-color: var(--color-grey-8);
+}
+
+.backgroundCard:hover {
+    background-color: var(--color-grey-6);
+    transition: 0.5s;
+}
+
+.dark__mode .backgroundCard:hover {
+    background-color: var(--color-grey-7);
+    transition: 0.5s;
+}
+
+.header__container>div>button {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0rem 0.5625rem;
+    border-radius: 0.3125rem;
+}
+
+.header__container>div>button>figure {
+    width: 1rem;
+    height: 1rem;
+}
+
+.header__container>div>button>figure>img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.price__area>button {
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-1);
 }
